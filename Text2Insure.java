@@ -27,8 +27,7 @@ public class Text2Insure {
 		 driver.manage().deleteAllCookies();
 		 driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-		 driver.get("https://dev.text2insure.co.uk/backmeup/public_html/");
-		
+		 driver.get("https://dev.text2insure.co.uk/backmeup/public_html/");		
 		
 	  }	
 	
