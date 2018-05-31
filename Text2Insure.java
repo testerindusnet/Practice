@@ -36,12 +36,11 @@ public class Text2Insure {
   public void registrationTest() throws Exception {
 	  
 	  driver.findElement(By.linkText("Get Insured")).click();
-	  Select s=new Select(driver.findElement(By.id("itemCat_X1_1")));
-	  s.selectByValue("5");
-	  driver.findElement(By.id("itemName_X1_1")).sendKeys("Laptop");
-	  driver.findElement(By.id("tick0")).click();
-	  driver.findElement(By.id("tick1")).click();
 	  driver.findElement(By.id("nextBut")).click();
+	  Thread.sleep(3000);
+	  driver.findElement(By.id("nextBut")).click();
+	  Thread.sleep(3000);
+	  driver.findElement(By.id("staffWarningFormBtn")).click();
 	  Select title=new Select(driver.findElement(By.id("title")));
 	  title.selectByValue("Mr");
 	  driver.findElement(By.id("firstName")).sendKeys("Nil");
